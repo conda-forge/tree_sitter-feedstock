@@ -10,3 +10,4 @@ conda_build:
   pkg_format: '2'
 bot:
   inspection: hint-all
+test: native_and_emulated
