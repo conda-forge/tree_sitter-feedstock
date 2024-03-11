@@ -10,7 +10,7 @@ source:
   sha256: c74ec9eff30e0c5b9f00ee578cca64df322b9885c8a15364a2c537f485abcc77
 
 build:
-  skip: true  # [py<33 and py>311]
+  skip: true  # [py<38 and py>311]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
@@ -22,8 +22,7 @@ requirements:
   host:
     - pip
     - python
-    - setuptools >=43.0.0
-    - wheel >=0.36.2
+    - setuptools >=43
   run:
     - python
 
