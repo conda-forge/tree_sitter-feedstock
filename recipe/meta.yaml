@@ -1,5 +1,5 @@
 {% set name = "tree_sitter" %}
-{% set version = "0.21.3" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
-  sha256: b5de3028921522365aa864d95b3c41926e0ba6a85ee5bd000e10dc49b0766988
+  sha256: b2bb274c110304a303ba6c73bff6a492648ce085790d2e6ea2c94f0719b7945c
 
 build:
   skip: true  # [py<38 or py>311]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
