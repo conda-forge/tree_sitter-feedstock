@@ -10,8 +10,7 @@ source:
   sha256: 66bae8dd47f1fed7bdef816115146d3a41c39b5c482d7bad36d9ba1def088450
 
 build:
-  skip: true  # [py<38 or py>311]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   number: 0
 
 requirements:
@@ -45,5 +44,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - thewchan
     - davidbrochart
