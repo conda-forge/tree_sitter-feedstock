@@ -207,7 +207,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-tree_sitter-green.svg)](https://anaconda.org/conda-forge/tree_sitter) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tree_sitter.svg)](https://anaconda.org/conda-forge/tree_sitter) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tree_sitter.svg)](https://anaconda.org/conda-forge/tree_sitter) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tree_sitter.svg)](https://anaconda.org/conda-forge/tree_sitter) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tree__sitter-green.svg)](https://anaconda.org/conda-forge/tree_sitter) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tree_sitter.svg)](https://anaconda.org/conda-forge/tree_sitter) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tree_sitter.svg)](https://anaconda.org/conda-forge/tree_sitter) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tree_sitter.svg)](https://anaconda.org/conda-forge/tree_sitter) |
 
 Installing tree_sitter
 ======================
