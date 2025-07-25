@@ -11,7 +11,7 @@ source:
 
 build:
   script: 
-    - export CFLAGS="-D_BSD_SOURCE"  [unix]
+    - export CFLAGS="-D_BSD_SOURCE"  # [unix]
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   skip: true  # [py<310]
   number: 0
