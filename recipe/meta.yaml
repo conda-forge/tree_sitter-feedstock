@@ -10,7 +10,9 @@ source:
   sha256: 15c88775cf24db06677bafe62df058a6457d8a6dde67baa48dd3723b905e79a6
 
 build:
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  script: 
+    - export CFLAGS="-D_BSD_SOURCE"  [unix]
+    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   skip: true  # [py<310]
   number: 0
 
