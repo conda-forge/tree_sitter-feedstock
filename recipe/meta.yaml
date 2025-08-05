@@ -1,5 +1,5 @@
 {% set name = "tree_sitter" %}
-{% set version = "0.25.0" %}
+{% set version = "0.25.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
-  sha256: 15c88775cf24db06677bafe62df058a6457d8a6dde67baa48dd3723b905e79a6
+  sha256: cd761ad0e4d1fc88a4b1b8083bae06d4f973acf6f5f29bbf13ea9609c1dec9c1
 
 build:
-  script: 
+  script:
     - export CFLAGS="-D_BSD_SOURCE"  # [unix]
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   skip: true  # [py<310]
