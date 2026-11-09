@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.26.0"
+  version: "0.26.1"
 
 package:
   name: tree_sitter
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tree_sitter/tree_sitter-${{ version }}.tar.gz
-  sha256: b40c219edccc4564530c96f8f1556f6202b37cda964d1cbd7bd2b7e68b40a245
+  sha256: 9919cbaf02d17fa9a4cd0e6da496aecf901b758e6eacf122eee393e3ef08aacd
 
 build:
-  number: 1
+  number: 0
   script:
     - if: unix
       then: export CFLAGS="-D_BSD_SOURCE"
