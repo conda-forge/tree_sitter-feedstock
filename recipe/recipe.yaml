@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.26.1"
+  version: "0.27.0"
 
 package:
   name: tree_sitter
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tree_sitter/tree_sitter-${{ version }}.tar.gz
-  sha256: 9919cbaf02d17fa9a4cd0e6da496aecf901b758e6eacf122eee393e3ef08aacd
+  sha256: 5ac47f29033af9c01b034f79f0234cde40d73a36976bce05256b3dbf05a2db4b
 
 build:
   number: 0
